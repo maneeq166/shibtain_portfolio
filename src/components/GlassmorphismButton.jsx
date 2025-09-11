@@ -27,13 +27,10 @@ const GlassmorphismButton = ({
     <div
       className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className} scale-[0.9]`}
     >
-      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-50"></div>
 
-      {/* Noise overlay */}
       <div className="absolute inset-0 bg-[#181818]/15 mix-blend-overlay"></div>
 
-      {/* Button content */}
       <button
         onClick={onClick}
         className="relative z-10 flex items-center gap-2 w-full h-full justify-center"

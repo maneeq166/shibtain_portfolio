@@ -1,6 +1,4 @@
 import React from "react";
-// import BG from "../assets/BG.jpg";
-// import cloud from "../assets/Ellipse 5275.jpg";
 import GlassmorphismButton from "../components/GlassmorphismButton";
 import TestimonialCard from "../components/TestimonialCard";
 
@@ -27,19 +25,11 @@ function Home() {
   ];
   return (
     <div className="w-full h-screen noise-bg">
-      {/* Noise overlay */}
-      {/* <div className="absolute inset-0 bg-[#181818]/90"></div> */}
-
-      {/* <img src={cloud} alt="" /> */}
-
-      {/* Painting */}
       <img
         src={"/paintings.svg"}
         alt=""
         className="absolute top-0 left-0 object-cover z-40 scale-[0.9] origin-left "
       />
-
-      {/* Centered content */}
       <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-50">
         <h1
           className="relative z-50 font-gambarino text-[80px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC]"
@@ -60,11 +50,6 @@ function Home() {
           Graphic Dznr.
         </h1>
       </div>
-      {/* <img
-        src={BG}
-        className="h-full w-full object-cover absolute top-0 left-0 -z-10"
-        alt=""
-      /> */}
       <div className=" absolute top-[65%] flex flex-col align-items justify-center text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#F5F5DC] font-Inter font-medium gap-2">
         <p
           className="w-fit px-1 mx-auto"

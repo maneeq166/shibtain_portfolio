@@ -16,26 +16,6 @@
   font-family: "Gambarino", serif;
 }
 
-/* .noise-bg {
-  position: relative;
-  background-color: #181818;
-  opacity: 90%;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-}
-
-.noise-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("/bg.jpg");
-  opacity: 0.5;
-  pointer-events: none;
-  width: 100vw;
-  height: 100vh;
-} */
-
 .noise-bg {
   background-image: url("/bg.jpg");
   background-size: cover;
