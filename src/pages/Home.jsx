@@ -32,6 +32,13 @@ function Home() {
 
       {/* <img src={cloud} alt="" /> */}
 
+      {/* Painting */}
+      <img
+        src={"/paintings.svg"}
+        alt=""
+        className="absolute top-0 left-0 object-cover z-40"
+      />
+
       {/* Centered content */}
       <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         {/* <img
