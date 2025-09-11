@@ -5,21 +5,21 @@ export default function TestimonialCard({
   role = "",
 }) {
   return (
-    <div className="bg-[#3232325C] w-full max-w-[370px] min-w-[200px] h-fit rounded-lg border border-[#BCBCBC] p-2 backdrop-blur-[5px] flex flex-col gap-2 z-50 lg:p-6 lg:max-w-[370px] md:p-4 md:max-w-[300px] sm:p-2 sm:max-w-[250px]">
-      <p className="font-Inter font-medium text-[#F5F5DC] text-sm lg:text-base md:text-sm sm:text-xs">
+    <div className="bg-[#3232325C] w-full max-w-[300px] min-w-[140px] h-fit rounded-lg border border-[#BCBCBC] p-1.5 backdrop-blur-[5px] flex flex-col gap-1.5 z-50 lg:p-4 lg:max-w-[300px] md:p-3 md:max-w-[240px] sm:p-1.5 sm:max-w-[180px]">
+      <p className="font-Inter font-medium text-[#F5F5DC] text-xs lg:text-sm md:text-xs sm:text-[9px]">
         {title}
       </p>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5">
         <img
           src={avatar}
           alt=""
-          className="w-8 h-8 lg:w-10 lg:h-10 md:w-9 md:h-9 sm:w-8 sm:h-8"
+          className="w-6 h-6 lg:w-8 lg:h-8 md:w-7 md:h-7 sm:w-6 sm:h-6"
         />
-        <div className="flex flex-col gap-1">
-          <p className="font-Inter font-medium text-[#F5F5DC] text-sm lg:text-base md:text-sm sm:text-xs">
+        <div className="flex flex-col gap-0.5">
+          <p className="font-Inter font-medium text-[#F5F5DC] text-xs lg:text-sm md:text-xs sm:text-[9px]">
             {name}
           </p>
-          <p className="font-Inter font-medium text-[#F5F5DC] text-xs lg:text-sm md:text-xs sm:text-xs">
+          <p className="font-Inter font-medium text-[#F5F5DC] text-[10px] lg:text-xs md:text-[10px] sm:text-[8px]">
             {role}
           </p>
         </div>
