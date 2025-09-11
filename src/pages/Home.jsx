@@ -42,7 +42,7 @@ function Home() {
 
         <div className="">
           <h1
-            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-white relative"
+            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC] relative"
             style={{
               textShadow: "5px 5px 20px #805E33",
               filter: "blur(1px)",
@@ -51,7 +51,7 @@ function Home() {
             Hey, I'm Shibtain <span className="text-[#5348ec]">(19)</span>
           </h1>
           <h1
-            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-white relative"
+            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC] relative"
             style={{
               textShadow: "5px 5px 20px #805E33",
               filter: "blur(1px)",

@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Gambarino";
+  src: url("./assets/Gambarino.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --font-Inter: "Inter", sans-serif;
-  --font-gambarino: "Playfair Display", serif;
+  --font-gambarino: "Gambarino", serif;
+}
+
+.font-gambarino {
+  font-family: "Gambarino", serif;
 }
 
 /* .noise-bg {
@@ -28,4 +39,5 @@
 .noise-bg {
   background-image: url("/bg.jpg");
   background-size: cover;
+  background-position: center;
 }

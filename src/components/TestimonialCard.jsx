@@ -5,7 +5,7 @@ export default function TestimonialCard({
   role = "",
 }) {
   return (
-    <div className="bg-[#3232325C] w-full max-w-[300px] min-w-[140px] h-fit rounded-lg border border-[#BCBCBC] p-1.5 backdrop-blur-[5px] flex flex-col gap-1.5 z-50 lg:p-4 lg:max-w-[300px] md:p-3 md:max-w-[240px] sm:p-1.5 sm:max-w-[180px]">
+    <div className="bg-[#3232325C] w-full max-w-[300px] min-w-[140px] h-fit rounded-lg border border-[#BCBCBC] p-1.5 backdrop-blur-[1px] flex flex-col gap-1.5 z-50 lg:p-4 lg:max-w-[300px] md:p-3 md:max-w-[240px] sm:p-1.5 sm:max-w-[180px]">
       <p className="font-Inter font-medium text-[#F5F5DC] text-xs lg:text-sm md:text-xs sm:text-[9px]">
         {title}
       </p>
