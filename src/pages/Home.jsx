@@ -2,8 +2,29 @@ import React from "react";
 import BG from "../assets/BG.jpg";
 // import cloud from "../assets/Ellipse 5275.jpg";
 import GlassmorphismButton from "../components/GlassmorphismButton";
+import TestimonialCard from "../components/TestimonialCard";
 
 function Home() {
+  const testimonialData = [
+    {
+      title: `“Insane speed, he transformed the page effortlessly*”`,
+      avatar: "/hardeep.svg",
+      name: "Hardeep Gambhir",
+      role: "Co-Founder @LocalHost Ventures",
+    },
+    {
+      title: ` “I can vouch for his work”`,
+      avatar: "/abdullah.svg",
+      name: "Choudhary Abdullah",
+      role: "Founder @ Superdev Pro",
+    },
+    {
+      title: `“His brochure design for Muztream stood out at Riyadh event”`,
+      avatar: "/salman.svg",
+      name: "Salman Perwez Khan",
+      role: "Founder @Muztream",
+    },
+  ];
   return (
     <div className="w-full h-screen">
       {/* <img src={cloud} alt="" /> */}
@@ -49,10 +70,24 @@ function Home() {
         <GlassmorphismButton className="mt-5">Know more</GlassmorphismButton>
       </div>
 
+      <div className="absolute bottom-[5%] left-1/2 transform -translate-x-1/2 flex justify-center gap-6 w-full px-4 z-20 lg:gap-8 md:gap-7 sm:gap-5">
+        <div className="flex flex-col gap-28 w-full max-w-7xl lg:flex-row lg:justify-center md:flex-row md:justify-center sm:flex-col sm:items-start">
+          {testimonialData.map((testimonial, index) => (
+            <TestimonialCard
+              key={index}
+              title={testimonial.title}
+              avatar={testimonial.avatar}
+              name={testimonial.name}
+              role={testimonial.role}
+            />
+          ))}
+        </div>
+      </div>
+
       <img
         src="/bottom-shade.svg"
         alt=""
-        className="absolute bottom-0 left-0 w-full"
+        className="absolute bottom-0 left-0 w-full z-10"
       />
     </div>
   );
