@@ -1,8 +1,7 @@
 import React from "react";
 import BG from "../assets/BG.jpg";
-import monitor from "../assets/download (3) 2.png";
 // import cloud from "../assets/Ellipse 5275.jpg";
-import arrow from "../assets/ArrowUpRight.png";
+import GlassmorphismButton from "../components/GlassmorphismButton";
 
 function Home() {
   return (
@@ -11,13 +10,29 @@ function Home() {
 
       {/* Centered content */}
       <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <img src={monitor} alt="" className="absolute top-22 left-15 z-0" />
+        <img
+          src={"/monitor.png"}
+          alt=""
+          className="absolute top-26 left-13 z-0"
+        />
 
         <div className="">
-          <h1 className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-white">
-            Hey, I’m Shibtain <span className="text-[#5348ec]">(19)</span>
+          <h1
+            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-white relative"
+            style={{
+              textShadow: "5px 5px 20px #805E33",
+              filter: "contrast(1.05) brightness(0.95)",
+            }}
+          >
+            Hey, I'm Shibtain <span className="text-[#5348ec]">(19)</span>
           </h1>
-          <h1 className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-white">
+          <h1
+            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-white relative"
+            style={{
+              textShadow: "5px 5px 20px #805E33",
+              filter: "contrast(1.05) brightness(0.95)",
+            }}
+          >
             Graphic Dznr.
           </h1>
         </div>
@@ -31,13 +46,14 @@ function Home() {
         <p>From UI to campaigns and AI-driven media already</p>
         <p>designing for startups & driving numbers</p>
 
-        <div className="flex justify-center border-2 border-white w-[150px] h-[54px]  bg-white/30 p-[10px] mt-5">
-          <button className="font-Inter font-semibold text-[16px] text-[#F5F5DC]">
-            Know more
-          </button>
-          <img src={arrow} className="size-[25px]" alt="" />
-        </div>
+        <GlassmorphismButton className="mt-5">Know more</GlassmorphismButton>
       </div>
+
+      <img
+        src="/bottom-shade.svg"
+        alt=""
+        className="absolute bottom-0 left-0 w-full"
+      />
     </div>
   );
 }
