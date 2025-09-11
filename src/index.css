@@ -41,3 +41,14 @@
   background-size: cover;
   background-position: center;
 }
+
+.noise-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0000002e;
+  opacity: 0.1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}

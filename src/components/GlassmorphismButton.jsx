@@ -9,7 +9,7 @@ const GlassmorphismButton = ({
   size = "default",
 }) => {
   const baseClasses =
-    "flex justify-center items-center border-2 border-white/15 bg-white/15 backdrop-blur-[2px] shadow-lg relative overflow-hidden gap-2 font-Inter font-semibold text-[#FFFFFF] transition-all duration-300 hover:bg-white/20 hover:border-white/25";
+    "flex justify-center items-center border-2 border-[#F5F5DC] bg-white/15 backdrop-blur-[2.3px] shadow-lg relative overflow-hidden gap-2 font-Inter font-semibold text-[#FFFFFF] transition-all duration-300 hover:bg-white/20 hover:border-white/25";
 
   const sizeClasses = {
     small: "px-3 py-2 text-sm",
