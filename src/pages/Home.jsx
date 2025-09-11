@@ -36,7 +36,7 @@ function Home() {
       <img
         src={"/paintings.svg"}
         alt=""
-        className="absolute top-0 left-0 object-cover z-40"
+        className="absolute top-0 left-0 object-cover z-40 scale-[0.9] origin-left "
       />
 
       {/* Centered content */}
@@ -89,7 +89,7 @@ function Home() {
       </div>
 
       <div className="absolute bottom-[5%] left-1/2 transform -translate-x-1/2 flex justify-center gap-6 w-full px-4 z-20 lg:gap-8 md:gap-7 sm:gap-5">
-        <div className="flex flex-col justify-between w-full max-w-7xl lg:flex-row lg:justify-between md:flex-row md:justify-between sm:flex-col sm:items-start">
+        <div className="flex flex-col justify-between w-full max-w-7xl lg:flex-row lg:justify-between md:flex-row md:justify-between sm:flex-col sm:items-end">
           {testimonialData.map((testimonial, index) => (
             <TestimonialCard
               key={index}
