@@ -40,33 +40,25 @@ function Home() {
       />
 
       {/* Centered content */}
-      <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        {/* <img
-          src={"/monitor.png"}
-          alt=""
-          className="absolute top-26 left-13 z-0"
-        /> */}
-
-        <div className="">
-          <h1
-            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC] relative"
-            style={{
-              textShadow: "5px 5px 20px #805E33",
-              filter: "blur(1px)",
-            }}
-          >
-            Hey, I'm Shibtain <span className="text-[#5348ec]">(19)</span>
-          </h1>
-          <h1
-            className="z-20 font-gambarino text-[72px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC] relative"
-            style={{
-              textShadow: "5px 5px 20px #805E33",
-              filter: "blur(1px)",
-            }}
-          >
-            Graphic Dznr.
-          </h1>
-        </div>
+      <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-50">
+        <h1
+          className="relative z-50 font-gambarino text-[80px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC]"
+          style={{
+            textShadow: "5px 5px 20px #805E33",
+            filter: "blur(1px)",
+          }}
+        >
+          Hey, I'm Shibtain <span className="text-[#5348ec]">(19)</span>
+        </h1>
+        <h1
+          className="relative z-50 font-gambarino text-[80px] font-normal leading-[84px] tracking-[-2.1px] text-[#F5F5DC]"
+          style={{
+            textShadow: "5px 5px 20px #805E33",
+            filter: "blur(1px)",
+          }}
+        >
+          Graphic Dznr.
+        </h1>
       </div>
       {/* <img
         src={BG}
