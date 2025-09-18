@@ -13,7 +13,7 @@ const GlassmorphismButton = ({
 
   const sizeClasses = {
     small: "px-3 py-2 text-sm",
-    default: "px-5 py-4 text-[16px]",
+    default: "md:px-5 md:py-4 px-4 py-3 text-sm md:text-base",
     large: "px-6 py-5 text-lg",
   };
 
