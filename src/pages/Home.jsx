@@ -1,6 +1,7 @@
 import React from "react";
 import GlassmorphismButton from "../components/GlassmorphismButton";
 import TestimonialCard from "../components/TestimonialCard";
+import MobileTestimonialCarousel from "../components/MobileTestimonialCarousel";
 
 function Home() {
   const testimonialData = [
@@ -75,6 +76,7 @@ function Home() {
         </GlassmorphismButton>
       </div>
 
+      {/* Testimonials - Desktop */}
       <div className="hidden absolute bottom-[5%] left-1/2 transform -translate-x-1/2 md:flex justify-center gap-6 w-full px-4 z-20 lg:gap-8 md:gap-7 sm:gap-5">
         <div className="flex flex-col justify-between w-full max-w-7xl lg:flex-row lg:justify-between md:flex-row md:justify-between sm:flex-col sm:items-end">
           {testimonialData.map((testimonial, index) => (
@@ -88,6 +90,11 @@ function Home() {
           ))}
         </div>
       </div>
+
+      {/* Mobile Testimonial Carousel */}
+      <MobileTestimonialCarousel 
+        testimonials={testimonialData}
+      />
 
       <img
         src="/bottom-shade.svg"
