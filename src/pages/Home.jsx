@@ -2,6 +2,7 @@ import React from "react";
 import GlassmorphismButton from "../components/GlassmorphismButton";
 import TestimonialCard from "../components/TestimonialCard";
 import MobileTestimonialCarousel from "../components/MobileTestimonialCarousel";
+import { Link } from "react-router-dom";
 
 function Home() {
   const testimonialData = [
@@ -72,7 +73,10 @@ function Home() {
         </p>
 
         <GlassmorphismButton className="mt-8 md:mt-5">
-          Know more
+          {/* open in new tab https://talibshibtain.github.io/portfolio/ */}
+          <Link to="https://talibshibtain.github.io/portfolio/" target="_blank">
+            Know more
+          </Link>
         </GlassmorphismButton>
       </div>
 
@@ -92,9 +96,7 @@ function Home() {
       </div>
 
       {/* Mobile Testimonial Carousel */}
-      <MobileTestimonialCarousel 
-        testimonials={testimonialData}
-      />
+      <MobileTestimonialCarousel testimonials={testimonialData} />
 
       <img
         src="/bottom-shade.svg"
