@@ -9,7 +9,7 @@ function Navbar() {
           CASE STUDIES/WORKS
         </Link>
         <Link to="https://www.linkedin.com/in/shibtain" target="_blank">
-          QUICK CALL
+          Linkedin
         </Link>
       </div>
     </nav>
